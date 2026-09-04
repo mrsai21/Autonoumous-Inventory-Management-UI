@@ -1,7 +1,6 @@
 import axios from 'axios'
 
-const apiBase = (
-    import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '')
+const apiBase = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '')
 
 const api = axios.create({
     baseURL: apiBase ? `${apiBase}/api` : '/api',
@@ -12,7 +11,7 @@ const api = axios.create({
 api.interceptors.response.use(
     (r) => r,
     (err) => {
-        const msg = err.response ? .data ? .detail || err.message || 'Request failed'
+        const msg = err?.response?.data?.detail || err?.message || 'Request failed'
         return Promise.reject(new Error(msg))
     }
 )
