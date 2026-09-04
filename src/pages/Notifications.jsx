@@ -64,7 +64,7 @@ export default function Notifications() {
   const [loading, setLoading] = useState(true)
   const [sending, setSending] = useState(false)
   const [message, setMessage] = useState('')
-  const [testEmail, setTestEmail] = useState('sai.divakar.kurra@verizon.com')
+  const [testEmail, setTestEmail] = useState('sai.divakar.kurra@gmail.com')
   const [filter, setFilter] = useState('ALL')
 
   const load = async () => {
@@ -130,7 +130,7 @@ export default function Notifications() {
         <div style={{ background: '#eff6ff', border: '1px solid #bfdbfe', borderRadius: 8, padding: '12px 16px', marginBottom: 20, fontSize: 13, color: '#1e40af' }}>
           <Bell size={14} style={{ display: 'inline', marginRight: 6, verticalAlign: 'middle' }} />
           <strong>Email Delivery:</strong> LLM-generated formal emails are always saved here.
-          Real delivery to <strong>sai.divakar.kurra@verizon.com</strong> activates once{' '}
+          Real delivery to <strong>sai.divakar.kurra@gmail.com</strong> activates once{' '}
           <code style={{ background: '#dbeafe', padding: '1px 5px', borderRadius: 3 }}>SMTP_PASSWORD</code> is set in backend/.env.
         </div>
 
