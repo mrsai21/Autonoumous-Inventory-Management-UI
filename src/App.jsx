@@ -143,6 +143,10 @@ export default function App() {
             <Route path="/warehouses" element={<Warehouses />} />
           </Routes>
         </main>
+        <footer className="app-footer">
+          <span>Built by Sai Divakar</span>
+          <a href="mailto:ksaidivakar@gmail.com">Email: ksaidivakar@gmail.com</a>
+        </footer>
       </div>
     </BrowserRouter>
   )
